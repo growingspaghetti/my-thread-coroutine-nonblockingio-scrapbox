@@ -1,0 +1,11 @@
+[package]
+name = "rust_async_await"
+version = "0.1.0"
+edition = "2018"
+
+[[bin]]
+name = "go-chan"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "0.2.11", features = ["full"] }

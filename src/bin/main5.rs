@@ -12,7 +12,7 @@ async fn main() {
     // main5::main::{{closure}}::{{closure}}
     println!("{}", type_of(|| async {"Hello World"}));
 
-    let handle: task::JoinHandle<_> = tokio::spawn((|| async {"Hello World"})());
+    let handle: task::JoinHandle<_> = tokio::spawn((|| async {"Hello World"})());  // <- it's just returning `async {"Hello World"}`
     // Hello World
     println!("{}", handle.await.unwrap());
 }

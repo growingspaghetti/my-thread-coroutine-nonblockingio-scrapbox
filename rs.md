@@ -4,3 +4,5 @@
 <font color="#A6E22E"><b>     Running</b></font> `target/debug/main`
 tokio
 </pre>
+
+install https://github.com/rust-analyzer/rust-analyzer
